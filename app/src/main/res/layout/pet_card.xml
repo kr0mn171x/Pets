@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvPets"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_snorlax"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btnLikePet"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_bone"/>
+            <TextView
+                android:id="@+id/tvPetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strPet"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btnLikePet"
+                android:layout_toEndOf="@+id/btnLikePet"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
+            <TextView
+                android:id="@+id/tvCounterLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strLikes"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="60dp"
+                android:layout_marginEnd="60dp" />
+            <ImageButton
+                android:id="@+id/btnCounterLikes"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_bonecolor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
